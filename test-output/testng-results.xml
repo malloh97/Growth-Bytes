@@ -1,247 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="9" passed="9" failed="0" skipped="0">
+<testng-results ignored="8" total="9" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-02-19T17:13:25 EET" name="Default suite" finished-at="2021-02-19T17:19:11 EET" duration-ms="345744">
+  <suite started-at="2021-02-19T21:23:26 EET" name="Default suite" finished-at="2021-02-19T21:23:41 EET" duration-ms="15056">
     <groups>
     </groups>
-    <test started-at="2021-02-19T17:13:25 EET" name="Default test" finished-at="2021-02-19T17:19:11 EET" duration-ms="345744">
-      <class name="TestCases.Assessments">
-        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:TestCases.Assessments@29176cc1]" started-at="2021-02-19T17:13:25 EET" name="setup" finished-at="2021-02-19T17:13:35 EET" duration-ms="9540" status="PASS">
+    <test started-at="2021-02-19T21:23:26 EET" name="Default test" finished-at="2021-02-19T21:23:41 EET" duration-ms="15056">
+      <class name="TestCases.HomePage">
+        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:TestCases.HomePage@30b7c004]" started-at="2021-02-19T21:23:26 EET" name="setup" finished-at="2021-02-19T21:23:36 EET" duration-ms="10261" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void TestCases.Assessments.HR_Assessment()]]>
+                <![CDATA[public void TestCases.HomePage.Click_at_Arrow_To_See_Feedback()]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="HR_Assessment()[pri:1, instance:TestCases.Assessments@29176cc1]" started-at="2021-02-19T17:13:35 EET" name="HR_Assessment" finished-at="2021-02-19T17:13:59 EET" duration-ms="23471" status="PASS">
+        <test-method signature="Click_at_Arrow_To_See_Feedback()[pri:0, instance:TestCases.HomePage@30b7c004]" started-at="2021-02-19T21:23:36 EET" name="Click_at_Arrow_To_See_Feedback" finished-at="2021-02-19T21:23:38 EET" duration-ms="1496" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- HR_Assessment -->
-        <test-method is-config="true" signature="teardown(java.lang.reflect.Method)[pri:0, instance:TestCases.Assessments@29176cc1]" started-at="2021-02-19T17:13:59 EET" name="teardown" finished-at="2021-02-19T17:14:02 EET" duration-ms="2995" status="PASS">
+        </test-method> <!-- Click_at_Arrow_To_See_Feedback -->
+        <test-method is-config="true" signature="teardown(java.lang.reflect.Method)[pri:0, instance:TestCases.HomePage@30b7c004]" started-at="2021-02-19T21:23:38 EET" name="teardown" finished-at="2021-02-19T21:23:41 EET" duration-ms="3235" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void TestCases.Assessments.HR_Assessment()]]>
+                <![CDATA[public void TestCases.HomePage.Click_at_Arrow_To_See_Feedback()]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:TestCases.Assessments@29176cc1]" started-at="2021-02-19T17:14:02 EET" name="setup" finished-at="2021-02-19T17:14:10 EET" duration-ms="8510" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void TestCases.Assessments.Sales_Assessment()]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="Sales_Assessment()[pri:2, instance:TestCases.Assessments@29176cc1]" started-at="2021-02-19T17:14:10 EET" name="Sales_Assessment" finished-at="2021-02-19T17:14:33 EET" duration-ms="23193" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Sales_Assessment -->
-        <test-method is-config="true" signature="teardown(java.lang.reflect.Method)[pri:0, instance:TestCases.Assessments@29176cc1]" started-at="2021-02-19T17:14:33 EET" name="teardown" finished-at="2021-02-19T17:14:36 EET" duration-ms="2884" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void TestCases.Assessments.Sales_Assessment()]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardown -->
-        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:TestCases.Assessments@29176cc1]" started-at="2021-02-19T17:14:36 EET" name="setup" finished-at="2021-02-19T17:14:43 EET" duration-ms="6526" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void TestCases.Assessments.Financial_Assessment()]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="Financial_Assessment()[pri:3, instance:TestCases.Assessments@29176cc1]" started-at="2021-02-19T17:14:43 EET" name="Financial_Assessment" finished-at="2021-02-19T17:15:12 EET" duration-ms="28937" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Financial_Assessment -->
-        <test-method is-config="true" signature="teardown(java.lang.reflect.Method)[pri:0, instance:TestCases.Assessments@29176cc1]" started-at="2021-02-19T17:15:12 EET" name="teardown" finished-at="2021-02-19T17:15:14 EET" duration-ms="2862" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void TestCases.Assessments.Financial_Assessment()]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardown -->
-        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:TestCases.Assessments@29176cc1]" started-at="2021-02-19T17:15:14 EET" name="setup" finished-at="2021-02-19T17:15:22 EET" duration-ms="7920" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void TestCases.Assessments.Marketing_Assessment()]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="Marketing_Assessment()[pri:4, instance:TestCases.Assessments@29176cc1]" started-at="2021-02-19T17:15:22 EET" name="Marketing_Assessment" finished-at="2021-02-19T17:15:48 EET" duration-ms="25624" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Marketing_Assessment -->
-        <test-method is-config="true" signature="teardown(java.lang.reflect.Method)[pri:0, instance:TestCases.Assessments@29176cc1]" started-at="2021-02-19T17:15:48 EET" name="teardown" finished-at="2021-02-19T17:15:51 EET" duration-ms="2942" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void TestCases.Assessments.Marketing_Assessment()]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardown -->
-        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:TestCases.Assessments@29176cc1]" started-at="2021-02-19T17:15:51 EET" name="setup" finished-at="2021-02-19T17:16:04 EET" duration-ms="13066" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void TestCases.Assessments.Processes_Assessment()]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="Processes_Assessment()[pri:5, instance:TestCases.Assessments@29176cc1]" started-at="2021-02-19T17:16:04 EET" name="Processes_Assessment" finished-at="2021-02-19T17:16:29 EET" duration-ms="24697" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Processes_Assessment -->
-        <test-method is-config="true" signature="teardown(java.lang.reflect.Method)[pri:0, instance:TestCases.Assessments@29176cc1]" started-at="2021-02-19T17:16:29 EET" name="teardown" finished-at="2021-02-19T17:16:32 EET" duration-ms="2851" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void TestCases.Assessments.Processes_Assessment()]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardown -->
-        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:TestCases.Assessments@29176cc1]" started-at="2021-02-19T17:16:32 EET" name="setup" finished-at="2021-02-19T17:16:38 EET" duration-ms="6394" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void TestCases.Assessments.Digitization_Assessment()]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="Digitization_Assessment()[pri:6, instance:TestCases.Assessments@29176cc1]" started-at="2021-02-19T17:16:38 EET" name="Digitization_Assessment" finished-at="2021-02-19T17:17:01 EET" duration-ms="22945" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Digitization_Assessment -->
-        <test-method is-config="true" signature="teardown(java.lang.reflect.Method)[pri:0, instance:TestCases.Assessments@29176cc1]" started-at="2021-02-19T17:17:01 EET" name="teardown" finished-at="2021-02-19T17:17:04 EET" duration-ms="2890" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void TestCases.Assessments.Digitization_Assessment()]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardown -->
-        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:TestCases.Assessments@29176cc1]" started-at="2021-02-19T17:17:04 EET" name="setup" finished-at="2021-02-19T17:17:10 EET" duration-ms="5944" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void TestCases.Assessments.TheStrategy_Assessment()]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="TheStrategy_Assessment()[pri:7, instance:TestCases.Assessments@29176cc1]" started-at="2021-02-19T17:17:10 EET" name="TheStrategy_Assessment" finished-at="2021-02-19T17:17:33 EET" duration-ms="23189" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TheStrategy_Assessment -->
-        <test-method is-config="true" signature="teardown(java.lang.reflect.Method)[pri:0, instance:TestCases.Assessments@29176cc1]" started-at="2021-02-19T17:17:33 EET" name="teardown" finished-at="2021-02-19T17:17:36 EET" duration-ms="3444" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void TestCases.Assessments.TheStrategy_Assessment()]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardown -->
-        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:TestCases.Assessments@29176cc1]" started-at="2021-02-19T17:17:36 EET" name="setup" finished-at="2021-02-19T17:17:44 EET" duration-ms="7792" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void TestCases.Assessments.OrganizationalStructure_Assessment()]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="OrganizationalStructure_Assessment()[pri:8, instance:TestCases.Assessments@29176cc1]" started-at="2021-02-19T17:17:44 EET" name="OrganizationalStructure_Assessment" finished-at="2021-02-19T17:18:05 EET" duration-ms="21336" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- OrganizationalStructure_Assessment -->
-        <test-method is-config="true" signature="teardown(java.lang.reflect.Method)[pri:0, instance:TestCases.Assessments@29176cc1]" started-at="2021-02-19T17:18:05 EET" name="teardown" finished-at="2021-02-19T17:18:09 EET" duration-ms="3035" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void TestCases.Assessments.OrganizationalStructure_Assessment()]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardown -->
-        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:TestCases.Assessments@29176cc1]" started-at="2021-02-19T17:18:09 EET" name="setup" finished-at="2021-02-19T17:18:16 EET" duration-ms="7628" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void TestCases.Assessments.ComprehensiveEvaluation()]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="ComprehensiveEvaluation()[pri:9, instance:TestCases.Assessments@29176cc1]" started-at="2021-02-19T17:18:16 EET" name="ComprehensiveEvaluation" finished-at="2021-02-19T17:19:08 EET" duration-ms="51983" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- ComprehensiveEvaluation -->
-        <test-method is-config="true" signature="teardown(java.lang.reflect.Method)[pri:0, instance:TestCases.Assessments@29176cc1]" started-at="2021-02-19T17:19:08 EET" name="teardown" finished-at="2021-02-19T17:19:11 EET" duration-ms="3035" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void TestCases.Assessments.ComprehensiveEvaluation()]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardown -->
-      </class> <!-- TestCases.Assessments -->
+      </class> <!-- TestCases.HomePage -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
