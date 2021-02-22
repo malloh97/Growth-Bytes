@@ -126,7 +126,7 @@ public class HomePage extends TestBase{
     	}
     }
 	
-	@Test(priority=9)
+	@Test(priority=9, enabled=false)
 	public void Click_at_Arrow_To_See_Feedback()
 	{
 		WebElement element = driver.findElement(By.xpath("(//div[@class='media-body'])[9]"));
@@ -147,7 +147,45 @@ public class HomePage extends TestBase{
     	
 	}
 	
+
+	@Test(priority=10, enabled=false)
+	public void Facebook_Account()
+	{
+		WebElement element = driver.findElement(By.xpath("//div[@class='footer-title']"));
+		JavascriptExecutor js = ((JavascriptExecutor)driver);
+		js.executeScript("arguments[0].scrollIntoView(true);", element);
+		
+		driver.findElement(By.xpath("//i[contains(@class,'fa fa-facebook')]")).click();
+		String Actual = driver.getCurrentUrl();
+		String Expected = "https://web.facebook.com/GrowthBytes-114471213734557?_rdc=1&_rdr";
+		Assert.assertEquals(Actual, Expected);
+	}
 	
+	@Test(priority=11)
+	public void Linkedin_Account()
+	{
+		WebElement element = driver.findElement(By.xpath("//div[@class='footer-title']"));
+		JavascriptExecutor js = ((JavascriptExecutor)driver);
+		js.executeScript("arguments[0].scrollIntoView(true);", element);
+		
+		driver.findElement(By.xpath("//i[contains(@class,'fa fa-linkedin')]")).click();
+		String Actual = driver.getCurrentUrl();
+		String Expected = "https://www.linkedin.com/company/growthbytes/";
+		Assert.assertEquals(Actual, Expected);
+	}
+	
+	@Test(priority=12)
+	public void Twitter_Account()
+	{
+		WebElement element = driver.findElement(By.xpath("//div[@class='footer-title']"));
+		JavascriptExecutor js = ((JavascriptExecutor)driver);
+		js.executeScript("arguments[0].scrollIntoView(true);", element);
+		
+		driver.findElement(By.xpath("//i[contains(@class,'fa fa-twitter')]")).click();
+		String Actual = driver.getCurrentUrl();
+		String Expected = "https://twitter.com/GrowthBytes";
+		Assert.assertEquals(Actual, Expected);
+	}
 	
 	
 	

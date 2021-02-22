@@ -3,6 +3,7 @@ package TestCases;
 import java.lang.reflect.Method;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -27,7 +28,7 @@ public class Assessments extends TestBase{
 		aftertest(method.getName());
 	}
 	
-	@Test(priority=1)
+	@Test(priority=1, enabled=false)
 	public void HR_Assessment()
 	{
         LogIn();
@@ -47,7 +48,7 @@ public class Assessments extends TestBase{
 		Assert.assertTrue(Actual);
 	}
 	
-	@Test(priority=2)
+	@Test(priority=2, enabled=false)
 	public void Sales_Assessment()
 	{
         LogIn();
@@ -85,7 +86,7 @@ public class Assessments extends TestBase{
 		Assert.assertTrue(Actual);
 	}
 	
-	@Test(priority=3)
+	@Test(priority=3, enabled=false)
 	public void Financial_Assessment()
 	{
         LogIn();
@@ -135,7 +136,7 @@ public class Assessments extends TestBase{
 		Assert.assertTrue(Actual);
 	}
 	
-	@Test(priority=4)
+	@Test(priority=4, enabled=false)
 	public void Marketing_Assessment()
 	{
         LogIn();
@@ -179,7 +180,7 @@ public class Assessments extends TestBase{
 		Assert.assertTrue(Actual);
 	}
 	
-	@Test(priority=5)
+	@Test(priority=5, enabled=false)
 	public void Processes_Assessment()
 	{
         LogIn();
@@ -223,7 +224,7 @@ public class Assessments extends TestBase{
 		Assert.assertTrue(Actual);
 	}
 	
-	@Test(priority=6)
+	@Test(priority=6, enabled=false)
 	public void Digitization_Assessment()
 	{
         LogIn();
@@ -262,7 +263,7 @@ public class Assessments extends TestBase{
 	}
 	
 
-	@Test(priority=7)
+	@Test(priority=7, enabled=false)
 	public void TheStrategy_Assessment()
 	{
         LogIn();
@@ -302,7 +303,7 @@ public class Assessments extends TestBase{
 	
 	
 
-	@Test(priority=8)
+	@Test(priority=8, enabled=false)
 	public void OrganizationalStructure_Assessment()
 	{
         LogIn();
@@ -340,7 +341,7 @@ public class Assessments extends TestBase{
 		Assert.assertTrue(Actual);
 	}
 	
-	@Test(priority=9)
+	@Test(priority=9, enabled=false)
 	public void ComprehensiveEvaluation()
 	{
 		LogIn();
@@ -443,6 +444,13 @@ public class Assessments extends TestBase{
 		}
 		
 		
+	}
+	
+	@Test(priority=10, enabled=false)
+	public void Send_The_Result_Of_Assessment_By_Email()
+	{
+		HR_Assessment();
+		driver.findElement(By.xpath("//button[contains(@class,'btn btn-solid send-btn')]")).click();
 	}
 	
 	

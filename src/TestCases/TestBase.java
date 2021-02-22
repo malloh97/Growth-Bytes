@@ -34,7 +34,7 @@ public class TestBase {
 	{
 		System.out.println("Congrates, Testing of "+name+" Case is Finished");
 		recorder.stop();
-		driver.quit();
+		//driver.quit();
 	}
 	
 	public void LogIn()

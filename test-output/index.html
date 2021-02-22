@@ -26,7 +26,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -40,7 +40,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Default_suite" class="navigator-link">
-              <span class="suite-name border-passed">Default suite</span>
+              <span class="suite-name border-failed">Default suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -51,7 +51,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Default_suite" class="navigator-link ">
-                    <span>C:\Users\ahmad\AppData\Local\Temp\testng-eclipse-1688860360\testng-customsuite.xml</span>
+                    <span>C:\Users\ahmad\AppData\Local\Temp\testng-eclipse--1601212432\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -93,7 +93,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method,   1 passed</span>
+                    <span class="method-stats">2 methods, 1 failed,   1 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Default_suite" class="hide-methods failed suite-Default_suite"> (hide)</a> <!-- hide-methods failed suite-Default_suite -->
+                      <a href="#" panel-name="suite-Default_suite" class="show-methods failed suite-Default_suite"> (show)</a> <!-- show-methods failed suite-Default_suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Default_suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="TestCases.HomePage" class="method navigator-link" hash-for-method="Linkedin_Account">Linkedin_Account</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Default_suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -104,7 +118,7 @@
                     <div class="method-list-content passed suite-Default_suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="TestCases.HomePage" class="method navigator-link" hash-for-method="Click_at_Arrow_To_See_Feedback">Click_at_Arrow_To_See_Feedback</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="TestCases.HomePage" class="method navigator-link" hash-for-method="Twitter_Account">Twitter_Account</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Default_suite -->
@@ -119,6 +133,59 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Default_suite" class="panel Default_suite">
+          <div class="suite-Default_suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">TestCases.HomePage</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="Linkedin_Account">
+                  </a> <!-- Linkedin_Account -->
+                  <span class="method-name">Linkedin_Account</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [https://www.linkedin.com/company/growthbytes/] but found [https://www.linkedin.com/authwall?trk=gf&amp;trkInfo=AQEzkVO8HfN3QQAAAXfKd73ItEvwvW-ziZpqUPICJB_7-zPCTsYlv7d-4bXNTWcjyaXg9uMpsNYAO_IEU2DuwvGEsiUKoVOQhYnpVOz-8sfElPWU4IP6HV1-Ef7lgefjuevUGb0=&amp;originalReferer=https://growth-bytes.com/&amp;sessionRedirect=https%3A%2F%2Fwww.linkedin.com%2Fcompany%2Fgrowthbytes%2F]
+	at org.testng.Assert.fail(Assert.java:99)
+	at org.testng.Assert.failNotEquals(Assert.java:1037)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+	at org.testng.Assert.assertEquals(Assert.java:122)
+	at org.testng.Assert.assertEquals(Assert.java:629)
+	at org.testng.Assert.assertEquals(Assert.java:639)
+	at TestCases.HomePage.Linkedin_Account(HomePage.java:174)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:764)
+	at org.testng.TestRunner.run(TestRunner.java:585)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.runSuites(TestNG.java:1069)
+	at org.testng.TestNG.run(TestNG.java:1037)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Default_suite-class-failed -->
           <div class="suite-Default_suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -127,9 +194,9 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="Click_at_Arrow_To_See_Feedback">
-                  </a> <!-- Click_at_Arrow_To_See_Feedback -->
-                  <span class="method-name">Click_at_Arrow_To_See_Feedback</span>
+                  <a name="Twitter_Account">
+                  </a> <!-- Twitter_Account -->
+                  <span class="method-name">Twitter_Account</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -137,7 +204,7 @@
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\ahmad\AppData\Local\Temp\testng-eclipse-1688860360\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\ahmad\AppData\Local\Temp\testng-eclipse--1601212432\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -186,16 +253,20 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(1);
+data.addRows(2);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'Click_at_Arrow_To_See_Feedback')
+data.setCell(0, 1, 'Twitter_Account')
 data.setCell(0, 2, 'TestCases.HomePage')
-data.setCell(0, 3, 1496);
+data.setCell(0, 3, 5143);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'Linkedin_Account')
+data.setCell(1, 2, 'TestCases.HomePage')
+data.setCell(1, 3, 2648);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 1 seconds</span>
+              <span class="suite-total-time">Total running time: 7 seconds</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -210,12 +281,14 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">8 ignored methods</span>
+            <span class="header-content">10 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="ignored-class-div">
               <span class="ignored-class-name">TestCases.HomePage</span>
               <div class="ignored-methods-div">
+                <span class="ignored-method-name">Facebook_Account</span>
+                <br/>
                 <span class="ignored-method-name">Check_If_Emailaddress_Displyed_And_Clickable</span>
                 <br/>
                 <span class="ignored-method-name">Tools_and_Forms_Packages</span>
@@ -225,6 +298,8 @@ return data;
                 <span class="ignored-method-name">Click_at_Arrow_To_See_Products</span>
                 <br/>
                 <span class="ignored-method-name">Policies_and_procedures_Packages</span>
+                <br/>
+                <span class="ignored-method-name">Click_at_Arrow_To_See_Feedback</span>
                 <br/>
                 <span class="ignored-method-name">Check_If_WishList_Displyed_And_Clickable</span>
                 <br/>
@@ -244,16 +319,30 @@ return data;
             <div class="chronological-class">
               <div class="chronological-class-name">TestCases.HomePage</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
-                <span class="method-name">setup(public void TestCases.HomePage.Click_at_Arrow_To_See_Feedback())</span>
+                <span class="method-name">setup(public void TestCases.HomePage.Linkedin_Account())</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">Click_at_Arrow_To_See_Feedback</span>
-                <span class="method-start">10264 ms</span>
+                <img src="failed.png">
+                </img>
+                <span class="method-name">Linkedin_Account</span>
+                <span class="method-start">29790 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">teardown(public void TestCases.HomePage.Click_at_Arrow_To_See_Feedback())</span>
-                <span class="method-start">11764 ms</span>
+                <span class="method-name">teardown(public void TestCases.HomePage.Linkedin_Account())</span>
+                <span class="method-start">32449 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup(public void TestCases.HomePage.Twitter_Account())</span>
+                <span class="method-start">34587 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">Twitter_Account</span>
+                <span class="method-start">49603 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown(public void TestCases.HomePage.Twitter_Account())</span>
+                <span class="method-start">54750 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

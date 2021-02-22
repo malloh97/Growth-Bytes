@@ -5,8 +5,8 @@
     <classes>
       <class name="TestCases.HomePage">
         <methods>
+          <include name="Linkedin_Account"/>
           <include name="setup"/>
-          <include name="Policies_and_procedures_Packages"/>
           <include name="teardown"/>
         </methods>
       </class> <!-- TestCases.HomePage -->
