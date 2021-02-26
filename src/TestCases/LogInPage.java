@@ -1,5 +1,6 @@
 package TestCases;
 
+
 import java.lang.reflect.Method;
 import org.openqa.selenium.By;
 import org.testng.Assert;
@@ -13,7 +14,7 @@ import atu.testrecorder.exceptions.ATUTestRecorderException;
 public class LogInPage extends TestBase{
 	
 
-    @BeforeMethod
+   	@BeforeMethod
     public void setup(Method method) throws ATUTestRecorderException
     {
 	   beforetest(method.getName());

@@ -1,109 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="10" total="12" passed="1" failed="1" skipped="0">
+<testng-results ignored="3" total="4" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-02-22T17:59:09 EET" name="Default suite" finished-at="2021-02-22T18:00:06 EET" duration-ms="57063">
+  <suite started-at="2021-02-26T21:57:21 EET" name="Default suite" finished-at="2021-02-26T21:57:56 EET" duration-ms="35475">
     <groups>
     </groups>
-    <test started-at="2021-02-22T17:59:09 EET" name="Default test" finished-at="2021-02-22T18:00:06 EET" duration-ms="57063">
-      <class name="TestCases.HomePage">
-        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:TestCases.HomePage@27ae2fd0]" started-at="2021-02-22T17:59:09 EET" name="setup" finished-at="2021-02-22T17:59:39 EET" duration-ms="29787" status="PASS">
+    <test started-at="2021-02-26T21:57:21 EET" name="Default test" finished-at="2021-02-26T21:57:56 EET" duration-ms="35475">
+      <class name="TestCases.Videos">
+        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:TestCases.Videos@3901d134]" started-at="2021-02-26T21:57:21 EET" name="setup" finished-at="2021-02-26T21:57:32 EET" duration-ms="10739" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void TestCases.HomePage.Linkedin_Account()]]>
+                <![CDATA[public void TestCases.Videos.Financial_Video() throws java.lang.InterruptedException]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="Linkedin_Account()[pri:11, instance:TestCases.HomePage@27ae2fd0]" started-at="2021-02-22T17:59:39 EET" name="Linkedin_Account" finished-at="2021-02-22T17:59:41 EET" duration-ms="2648" status="FAIL">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[expected [https://www.linkedin.com/company/growthbytes/] but found [https://www.linkedin.com/authwall?trk=gf&trkInfo=AQEzkVO8HfN3QQAAAXfKd73ItEvwvW-ziZpqUPICJB_7-zPCTsYlv7d-4bXNTWcjyaXg9uMpsNYAO_IEU2DuwvGEsiUKoVOQhYnpVOz-8sfElPWU4IP6HV1-Ef7lgefjuevUGb0=&originalReferer=https://growth-bytes.com/&sessionRedirect=https%3A%2F%2Fwww.linkedin.com%2Fcompany%2Fgrowthbytes%2F]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [https://www.linkedin.com/company/growthbytes/] but found [https://www.linkedin.com/authwall?trk=gf&trkInfo=AQEzkVO8HfN3QQAAAXfKd73ItEvwvW-ziZpqUPICJB_7-zPCTsYlv7d-4bXNTWcjyaXg9uMpsNYAO_IEU2DuwvGEsiUKoVOQhYnpVOz-8sfElPWU4IP6HV1-Ef7lgefjuevUGb0=&originalReferer=https://growth-bytes.com/&sessionRedirect=https%3A%2F%2Fwww.linkedin.com%2Fcompany%2Fgrowthbytes%2F]
-at org.testng.Assert.fail(Assert.java:99)
-at org.testng.Assert.failNotEquals(Assert.java:1037)
-at org.testng.Assert.assertEqualsImpl(Assert.java:140)
-at org.testng.Assert.assertEquals(Assert.java:122)
-at org.testng.Assert.assertEquals(Assert.java:629)
-at org.testng.Assert.assertEquals(Assert.java:639)
-at TestCases.HomePage.Linkedin_Account(HomePage.java:174)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:564)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:764)
-at org.testng.TestRunner.run(TestRunner.java:585)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
-at org.testng.SuiteRunner.run(SuiteRunner.java:286)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
-at org.testng.TestNG.runSuites(TestNG.java:1069)
-at org.testng.TestNG.run(TestNG.java:1037)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+        <test-method signature="Financial_Video()[pri:4, instance:TestCases.Videos@3901d134]" started-at="2021-02-26T21:57:32 EET" name="Financial_Video" finished-at="2021-02-26T21:57:54 EET" duration-ms="22607" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Linkedin_Account -->
-        <test-method is-config="true" signature="teardown(java.lang.reflect.Method)[pri:0, instance:TestCases.HomePage@27ae2fd0]" started-at="2021-02-22T17:59:41 EET" name="teardown" finished-at="2021-02-22T17:59:44 EET" duration-ms="2132" status="PASS">
+        </test-method> <!-- Financial_Video -->
+        <test-method is-config="true" signature="teardwon(java.lang.reflect.Method)[pri:0, instance:TestCases.Videos@3901d134]" started-at="2021-02-26T21:57:54 EET" name="teardwon" finished-at="2021-02-26T21:57:56 EET" duration-ms="2059" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void TestCases.HomePage.Linkedin_Account()]]>
+                <![CDATA[public void TestCases.Videos.Financial_Video() throws java.lang.InterruptedException]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- teardown -->
-        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:TestCases.HomePage@27ae2fd0]" started-at="2021-02-22T17:59:44 EET" name="setup" finished-at="2021-02-22T17:59:59 EET" duration-ms="15016" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void TestCases.HomePage.Twitter_Account()]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="Twitter_Account()[pri:12, instance:TestCases.HomePage@27ae2fd0]" started-at="2021-02-22T17:59:59 EET" name="Twitter_Account" finished-at="2021-02-22T18:00:04 EET" duration-ms="5143" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Twitter_Account -->
-        <test-method is-config="true" signature="teardown(java.lang.reflect.Method)[pri:0, instance:TestCases.HomePage@27ae2fd0]" started-at="2021-02-22T18:00:04 EET" name="teardown" finished-at="2021-02-22T18:00:06 EET" duration-ms="2241" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void TestCases.HomePage.Twitter_Account()]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardown -->
-      </class> <!-- TestCases.HomePage -->
+        </test-method> <!-- teardwon -->
+      </class> <!-- TestCases.Videos -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

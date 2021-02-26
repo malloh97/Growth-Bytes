@@ -1,10 +1,12 @@
 package TestCases;
 
-import java.lang.reflect.Method;
 
+import java.lang.reflect.Method;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
@@ -13,7 +15,7 @@ import org.testng.annotations.Test;
 import atu.testrecorder.exceptions.ATUTestRecorderException;
 
 public class HomePage extends TestBase{
-	
+
 	@BeforeMethod()
 	public void setup(Method method) throws ATUTestRecorderException
 	{
@@ -161,7 +163,7 @@ public class HomePage extends TestBase{
 		Assert.assertEquals(Actual, Expected);
 	}
 	
-	@Test(priority=11)
+	@Test(priority=11, enabled=false)
 	public void Linkedin_Account()
 	{
 		WebElement element = driver.findElement(By.xpath("//div[@class='footer-title']"));
@@ -174,7 +176,7 @@ public class HomePage extends TestBase{
 		Assert.assertEquals(Actual, Expected);
 	}
 	
-	@Test(priority=12)
+	@Test(priority=12, enabled=false)
 	public void Twitter_Account()
 	{
 		WebElement element = driver.findElement(By.xpath("//div[@class='footer-title']"));
@@ -187,8 +189,19 @@ public class HomePage extends TestBase{
 		Assert.assertEquals(Actual, Expected);
 	}
 	
+	//Learn more about us
 	
-	
+	@Test(priority=13, enabled=false)
+	public void Download_the_Guide_Now()
+	{
+		LogIn();
+		
+		WebElement element = driver.findElement(By.xpath("//div[@class='text-center']"));
+		JavascriptExecutor js = ((JavascriptExecutor)driver);
+		js.executeScript("arguments[0].scrollIntoView(true);", element);
+		
+		driver.findElement(By.xpath("//a[contains(@class,'btn btn-gb-btn-dark gtm-cta-click')]")).click();
+	}
 	
 	
 	

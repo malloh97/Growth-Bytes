@@ -1,5 +1,6 @@
 package TestCases;
 
+import java.io.IOException;
 import java.lang.reflect.Method;
 
 import org.openqa.selenium.By;
@@ -16,6 +17,11 @@ import atu.testrecorder.exceptions.ATUTestRecorderException;
 
 public class Assessments extends TestBase{
 	
+	public Assessments() throws IOException {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+
 	@BeforeMethod
 	public void setup(Method method) throws ATUTestRecorderException
 	{

@@ -2,6 +2,7 @@ package TestCases;
 
 
 
+import java.io.IOException;
 import java.lang.reflect.Method;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
@@ -16,7 +17,12 @@ import atu.testrecorder.exceptions.ATUTestRecorderException;
 public class SignUpPage extends TestBase{
 	
 
-    @BeforeMethod
+    public SignUpPage() throws IOException {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+
+	@BeforeMethod
 	public void setup(Method method) throws ATUTestRecorderException
 	{
 		beforetest(method.getName());
