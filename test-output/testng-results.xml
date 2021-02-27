@@ -1,39 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="3" total="4" passed="1" failed="0" skipped="0">
+<testng-results ignored="6" total="7" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-02-26T21:57:21 EET" name="Default suite" finished-at="2021-02-26T21:57:56 EET" duration-ms="35475">
+  <suite started-at="2021-02-27T21:12:54 EET" name="Default suite" finished-at="2021-02-27T21:13:26 EET" duration-ms="32330">
     <groups>
     </groups>
-    <test started-at="2021-02-26T21:57:21 EET" name="Default test" finished-at="2021-02-26T21:57:56 EET" duration-ms="35475">
-      <class name="TestCases.Videos">
-        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:TestCases.Videos@3901d134]" started-at="2021-02-26T21:57:21 EET" name="setup" finished-at="2021-02-26T21:57:32 EET" duration-ms="10739" status="PASS">
+    <test started-at="2021-02-27T21:12:54 EET" name="Default test" finished-at="2021-02-27T21:13:26 EET" duration-ms="32330">
+      <class name="TestCases.MyAccount">
+        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:TestCases.MyAccount@7b227d8d]" started-at="2021-02-27T21:12:54 EET" name="setup" finished-at="2021-02-27T21:13:03 EET" duration-ms="9789" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void TestCases.Videos.Financial_Video() throws java.lang.InterruptedException]]>
+                <![CDATA[public void TestCases.MyAccount.Edit_Account_Test() throws java.lang.InterruptedException]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="Financial_Video()[pri:4, instance:TestCases.Videos@3901d134]" started-at="2021-02-26T21:57:32 EET" name="Financial_Video" finished-at="2021-02-26T21:57:54 EET" duration-ms="22607" status="PASS">
+        <test-method signature="Edit_Account_Test()[pri:7, instance:TestCases.MyAccount@7b227d8d]" started-at="2021-02-27T21:13:03 EET" name="Edit_Account_Test" finished-at="2021-02-27T21:13:24 EET" duration-ms="20382" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Financial_Video -->
-        <test-method is-config="true" signature="teardwon(java.lang.reflect.Method)[pri:0, instance:TestCases.Videos@3901d134]" started-at="2021-02-26T21:57:54 EET" name="teardwon" finished-at="2021-02-26T21:57:56 EET" duration-ms="2059" status="PASS">
+        </test-method> <!-- Edit_Account_Test -->
+        <test-method is-config="true" signature="teardown(java.lang.reflect.Method)[pri:0, instance:TestCases.MyAccount@7b227d8d]" started-at="2021-02-27T21:13:24 EET" name="teardown" finished-at="2021-02-27T21:13:26 EET" duration-ms="2085" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void TestCases.Videos.Financial_Video() throws java.lang.InterruptedException]]>
+                <![CDATA[public void TestCases.MyAccount.Edit_Account_Test() throws java.lang.InterruptedException]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- teardwon -->
-      </class> <!-- TestCases.Videos -->
+        </test-method> <!-- teardown -->
+      </class> <!-- TestCases.MyAccount -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

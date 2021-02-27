@@ -9,9 +9,11 @@ import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.interactions.Actions;
 
 import atu.testrecorder.ATUTestRecorder;
 import atu.testrecorder.exceptions.ATUTestRecorderException;
@@ -46,10 +48,18 @@ public class TestBase {
 	public void LogIn()
 	{
 		driver.findElement(By.xpath("(//a[contains(@style,'color: rgb(153, 153, 153);')])[2]")).click();
-		driver.findElement(By.id("email")).sendKeys("ahmadmalloh97@gmail.com");
-		driver.findElement(By.id("password")).sendKeys("1234567");
+		driver.findElement(By.id("email")).sendKeys("ahmad@qiotic.live");
+		driver.findElement(By.id("password")).sendKeys("123456");
 		driver.findElement(By.xpath("(//button[@type='submit'])[3]")).click();
 	}
 	
+	public void Dashboard() throws InterruptedException
+	{
+		Actions action = new Actions(driver);
+		WebElement Move = driver.findElement(By.xpath("//li[contains(@class,'onhover-dropdown mobile-account')]"));
+		action.moveToElement(Move).build().perform();
+		Thread.sleep(3000);
+		driver.findElement(By.xpath("//i[contains(@class,'fa fa-tachometer')]")).click();
+	}
 	
 }
